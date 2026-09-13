@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure 11.2 - Long-term Challenges | Public Health Textbook</title>
+    <style>
+        .textbook-header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .textbook-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .figure-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .figure-reference {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+
+        .draft-notice {
+            text-align: center;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            border-radius: 6px;
+            padding: 10px 16px;
+            margin: 0 auto 20px auto;
+            max-width: 700px;
+            font-size: 0.95rem;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .concept-info {
+            background: #f8f9fa;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            min-height: 100px;
+            transition: all 0.3s ease;
+        }
+
+        .concept-info h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            font-size: 1.8rem;
+        }
+
+        .concept-info p {
+            margin: 10px 0 0 0;
+            color: #555;
+            line-height: 1.5;
+            font-size: 1.3rem;
+        }
+
+        .concept-info.empty {
+            color: #999;
+            font-style: italic;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px 0;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        #concept-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: block;
+        }
+
+        .hotspot-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .hotspot-overlay rect {
+            pointer-events: all;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s, fill 0.3s;
+            fill: #3498db;
+        }
+
+        .hotspot-overlay rect:hover {
+            opacity: 0.3;
+            fill: #3498db;
+        }
+
+        .legend {
+            margin-top: 30px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+
+        .legend h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        .textbook-footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #7f8c8d;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header class="textbook-header">
+        <div class="header-container">
+            <div class="textbook-title">
+                Springer Book: Artificial Intelligence in Public Health (Min Wu, 2026, ISBN: 978-3-032-15871-0)
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="figure-title">Interactive Concept Map for Long-term Challenges</div>
+        <div class="figure-reference">Figure 11.2: Long-term Challenges at the Social Science and Natural Science Sides of Public Health Informatics, Chapter 11</div>
+        <div class="draft-notice">
+            <strong>Draft content notice:</strong> Chapter 11 and Fig. 11.2 are part of the book, but the book text only names these long-term challenges without giving each one a full definition. The concept definitions and guiding questions in this viewer are a first-draft synthesis created to accompany Fig. 11.2, not text drawn from the book itself &mdash; provided here as teaching-artifact scaffolding, subject to revision.
+        </div>
+
+        <div class="description">
+            <p>Hover over any future-challenge concept to see its definition in the information panel below.</p>
+        </div>
+
+        <div class="concept-info empty" id="concept-info">
+            Hover over any concept in the diagram to see its definition here...
+        </div>
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="Fig-11-2-long-term-challenges.png" alt="Long-term challenges at the social science and natural science sides of public health informatics" id="concept-image">
+
+                <svg class="hotspot-overlay" id="hotspot-overlay" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <!--
+                    Percentage-based coordinates: x%, y%, width%, height%
+                    Coordinates located directly from the source PNG (connected-component
+                    text clustering on Fig-11-2-long-term_challenges.png), not hand-placed.
+                    "Social science side", "Natural science side", and "Public health
+                    informatics" are intentionally not interactive -- readers only need
+                    the specific future-challenge concepts.
+                    -->
+                    <rect x="15.90" y="17.61" width="18.01" height="9.78" 
+                          data-concept="global_ai_governance" data-title="Global AI governance"
+                          data-definition="Who sets the rules when an AI health tool crosses borders, and how do we keep those rules consistent? &nbsp; &nbsp;Coordinating rules, standards, and oversight for AI in health across countries &mdash; given that health data, AI models, and pandemics all cross borders while regulations stay national."></rect>
+                    <rect x="38.70" y="23.26" width="16.28" height="10.43" 
+                          data-concept="ai_clinical_adoption" data-title="AI clinical adoption"
+                          data-definition="Why do so many promising AI tools never make it into a clinician's actual daily workflow? &nbsp; &nbsp;The long-term challenge of getting AI tools actually integrated into everyday clinical practice &mdash; beyond pilot studies, into real workflows, incentives, and habits."></rect>
+                    <rect x="59.20" y="14.35" width="20.69" height="8.70" 
+                          data-concept="mental_health_bots" data-title="Mental health bots"
+                          data-definition="Can an AI chatbot genuinely support someone's mental health, and what happens if people rely on it instead of a human? &nbsp; &nbsp;AI chatbots and conversational agents delivering mental health support at scale, raising long-term questions about efficacy, safety, emotional dependency, and equitable access."></rect>
+                    <rect x="10.73" y="33.91" width="16.86" height="9.78" 
+                          data-concept="one_health_integration" data-title="One health integration"
+                          data-definition="How do we build AI systems that watch human, animal, and environmental health together instead of separately? &nbsp; &nbsp;Bringing human, animal, and environmental health surveillance together into shared AI-powered systems, recognizing how deeply zoonotic disease, climate change, and ecosystem health are linked."></rect>
+                    <rect x="39.66" y="33.70" width="17.62" height="13.48" 
+                          data-concept="trust_building" data-title="Trust-building among doctors and patients"
+                          data-definition="How much should a doctor or patient trust what an AI recommends &mdash; and how do we help them calibrate that? &nbsp; &nbsp;As AI increasingly mediates diagnosis, treatment, and communication, both clinicians and patients need calibrated trust &mdash; enough to use it, not so much they stop questioning it."></rect>
+                    <rect x="67.82" y="26.09" width="16.48" height="9.57" 
+                          data-concept="post_labor_healthcare" data-title="Post-labor healthcare"
+                          data-definition="What does the healthcare workforce look like once AI has automated most of today's routine clinical labor? &nbsp; &nbsp;A future in which AI and automation take over much of the routine labor of healthcare delivery, changing who the health workforce is and how care is organized and paid for."></rect>
+                    <rect x="70.31" y="40.87" width="22.03" height="9.78" 
+                          data-concept="ai_augmented_humans" data-title="AI-augmented humans"
+                          data-definition="What new public health questions arise once AI isn't just a tool people use, but a capability built into the person themselves? &nbsp; &nbsp;Humans whose cognitive or physical capacities are directly extended by AI &mdash; always-on health monitoring, decision support, brain-computer interfaces &mdash; raising new questions about equity, dependency, and identity."></rect>
+                    <rect x="14.75" y="71.30" width="24.14" height="9.57" 
+                          data-concept="climate_disease_models" data-title="Climate-disease models"
+                          data-definition="How will climate change reshape where and when diseases occur, and can AI help us see it coming? &nbsp; &nbsp;AI-driven models forecasting how a changing climate will shift disease patterns &mdash; vector-borne disease range expansion, heat-related illness, water- and food-borne outbreaks."></rect>
+                    <rect x="43.87" y="72.39" width="15.13" height="9.35" 
+                          data-concept="precision_medicine" data-title="Precision medicine"
+                          data-definition="Can precision medicine scale from individual patients to whole populations without leaving some groups behind? &nbsp; &nbsp;Using AI, genomics, and biomarker data to tailor prevention and treatment to the individual &mdash; and the challenge of scaling that personalization to whole populations without widening disparities."></rect>
+                    <rect x="67.62" y="72.61" width="14.94" height="10.43" 
+                          data-concept="synthetic_biology" data-title="Synthetic biology"
+                          data-definition="What happens to public health once AI can help design biology itself, not just analyze it? &nbsp; &nbsp;Engineering biological systems &mdash; synthetic vaccines, novel diagnostics and organisms &mdash; increasingly designed and optimized with AI, raising new opportunities and biosafety questions."></rect>
+                </svg>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3>How to Use This Interactive Figure</h3>
+            <p><strong>Hover</strong> over any of the 10 future-challenge concepts in the diagram to see its detailed definition in the information panel above.</p>
+            <p><strong>Learning Tip:</strong> The diagram splits long-term AI challenges into a social-science side (top) and a natural-science side (bottom), bridged by public health informatics.</p>
+        </div>
+    </div>
+
+    <footer class="textbook-footer">
+        <p>Interactive Concept Viewers &bull; &copy; 2026 Min Wu</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const conceptInfo = document.getElementById('concept-info');
+            const hotspots = document.querySelectorAll('#hotspot-overlay rect');
+            const image = document.getElementById('concept-image');
+
+            function updateSvgDimensions() {
+                const svg = document.getElementById('hotspot-overlay');
+                const imageRect = image.getBoundingClientRect();
+                svg.style.width = imageRect.width + 'px';
+                svg.style.height = imageRect.height + 'px';
+            }
+
+            hotspots.forEach(hotspot => {
+                hotspot.addEventListener('mouseover', function(e) {
+                    const definition = this.getAttribute('data-definition');
+                    const title = this.getAttribute('data-title');
+                    conceptInfo.innerHTML = `<h3>${title}</h3><p>${definition}</p>`;
+                    conceptInfo.classList.remove('empty');
+                });
+
+                hotspot.addEventListener('mouseout', function() {
+                    // Keep the info displayed until another hotspot is hovered
+                });
+
+                hotspot.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const concept = this.getAttribute('data-concept');
+                    console.log(`Concept clicked: ${concept}`);
+                });
+            });
+
+            image.addEventListener('load', updateSvgDimensions);
+            window.addEventListener('resize', updateSvgDimensions);
+
+            if (image.complete) {
+                updateSvgDimensions();
+            }
+        });
+    </script>
+</body>
+
+</html>
